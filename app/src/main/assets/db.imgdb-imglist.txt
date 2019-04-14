@@ -1,0 +1,3 @@
+leaflet.jpg|C:\Users\Student\Documents\Uni\Year3\test\rawimg/leaflet.jpg|0.1
+signcofo.jpg|C:\Users\Student\Documents\Uni\Year3\test\rawimg/signcofo.jpg
+sketchpad.jpg|C:\Users\Student\Documents\Uni\Year3\test\rawimg/sketchpad.jpg|0.179

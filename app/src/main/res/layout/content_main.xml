@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/IwouldLikeTo_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/i_like_to_view"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/explore_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/explore_button" />
+
+    <Button
+        android:id="@+id/scan_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/scan_button" />
+
+    <Button
+        android:id="@+id/play_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/play_button" />
+
+    <TextView
+        android:id="@+id/find_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/string_find_view"
+        android:textSize="30sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox_Main_buildings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_buildings" />
+    <CheckBox
+        android:id="@+id/checkBox_lecture_theatres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_lecture_theatres" />
+    <CheckBox
+        android:id="@+id/checkBox_study_spaces"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/study_spaces" />
+    <CheckBox
+        android:id="@+id/checkBox_food"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/food_outlets" />
+    <CheckBox
+        android:id="@+id/checkBox_shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/shops" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/search_fab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:clickable="true"
+        android:focusable="true"
+        app:backgroundTint="@color/design_default_color_primary_dark"
+        app:srcCompat="@android:drawable/ic_search_category_default" />
+</LinearLayout>

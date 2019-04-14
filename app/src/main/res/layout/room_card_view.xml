@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/room_card_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_bg"
+    android:gravity="center"
+    android:padding="3dp"
+    android:text=""
+    android:textAlignment="center">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+    <TableRow>
+        <TextView
+            android:id="@+id/room1_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/room1" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/room2_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/room2" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/room3_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/room3" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/room4_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/room4" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/room5_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/room5" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/room6_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/room6" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/room7_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/room7" />
+    </TableRow>
+    </TableLayout>
+
+</ScrollView>
