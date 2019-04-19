@@ -11,17 +11,10 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Button;
 
 //TODO: Privacy statements clickable
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
-    public Button m_exploreButton;
-    public Button m_playButton;
-    public Intent m_arView = new Intent(this, AugmentedImageActivity.class);
-    public Intent m_arDirections = new Intent(this, ArDirectionsActivity.class);
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,11 +32,7 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        //Button listeners
-        m_exploreButton = findViewById(R.id.explore_button);
-        m_exploreButton.setOnClickListener(view -> startActivity(m_arView));
-        m_playButton = findViewById(R.id.play_button);
-        m_exploreButton.setOnClickListener(view -> startActivity(m_arDirections));
+
     }
 
     @Override
@@ -92,12 +81,12 @@ public class MainActivity extends AppCompatActivity
             Intent map = new Intent(this, MapsActivity.class);
             Log.d("Map", "Intent created");
             startActivity(map);
-        } else if (id == R.id.nav_ar_view) {
+        } else if (id == R.id.nav_scan_sign) {
             Intent arView = new Intent(this, AugmentedImageActivity.class);
             startActivity(arView);
-        } else if (id == R.id.nav_settings) {
-            Intent settings = new Intent(this, SettingsActivity.class);
-            startActivity(settings);
+        } else if (id == R.id.nav_floor_plans) {
+            Intent floorPlansIntent = new Intent(this, FloorPlansActivity.class);
+            startActivity(floorPlansIntent);
         } else if (id == R.id.nav_about) {
             Intent about = new Intent(this, AboutActivity.class);
             startActivity(about);

@@ -8,17 +8,13 @@
     <uses-sdk
         android:minSdkVersion="24"
         android:targetSdkVersion="28" />
-
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
          location permissions for the 'MyLocation' functionality. 
     -->
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
-    <!-- "AR Required" apps must declare minSdkVersion ≥ 24 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- "AR Required" apps must declare minSdkVersion ≥ 24 -->
     <uses-permission android:name="android.permission.CAMERA" />
-
     <!--
          Indicates that app requires ARCore ("AR Required"). Ensures app is only
          visible in the Google Play Store on devices that support ARCore.
@@ -43,6 +39,11 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.a826488.arbaycampusinteresapp.FloorPlansActivity"
+            android:label="Floor plans"
+            android:parentActivityName="com.example.a826488.arbaycampusinteresapp.MainActivity" >
+        </activity>
         <activity
             android:name="com.example.a826488.arbaycampusinteresapp.MainActivity"
             android:label="AR Bay Campus Interest App"
@@ -73,6 +74,10 @@
             android:name="com.example.a826488.arbaycampusinteresapp.SettingsActivity"
             android:label="Settings"
             android:parentActivityName="com.example.a826488.arbaycampusinteresapp.MainActivity" />
+        <activity
+            android:name="com.example.a826488.arbaycampusinteresapp.CoFoFloor0"
+            android:label="Andy"
+            android:parentActivityName="com.example.a826488.arbaycampusinteresapp.MainActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -81,7 +86,6 @@
              sign the APK for publishing.
              You can define the keys for the debug and release targets in src/debug/ and src/release/. 
         -->
-
         <activity
             android:name="com.example.a826488.arbaycampusinteresapp.MapsActivity"
             android:label="@string/title_activity_maps"
@@ -98,7 +102,6 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
-
         <!--
              Indicates that app requires ARCore ("AR Required"). Causes Google
              Play Store to download and install ARCore when the app is installed.

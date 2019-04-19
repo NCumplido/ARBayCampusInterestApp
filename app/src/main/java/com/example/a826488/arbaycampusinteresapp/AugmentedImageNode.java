@@ -18,7 +18,6 @@ package com.example.a826488.arbaycampusinteresapp;
 
 import android.content.Context;
 import android.net.Uri;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.widget.TextView;
 
@@ -26,6 +25,7 @@ import com.google.ar.core.AugmentedImage;
 import com.google.ar.sceneform.AnchorNode;
 import com.google.ar.sceneform.HitTestResult;
 import com.google.ar.sceneform.Node;
+import com.google.ar.sceneform.math.Quaternion;
 import com.google.ar.sceneform.math.Vector3;
 import com.google.ar.sceneform.rendering.ModelRenderable;
 import com.google.ar.sceneform.rendering.ViewRenderable;
@@ -72,10 +72,10 @@ public class AugmentedImageNode extends AnchorNode implements Node.OnTapListener
     public AugmentedImageNode(Context context) {
     // Upon construction, start loading the models for the corners of the frame.
     if (ulCorner == null) {
-        ulCorner =
+        /*ulCorner =
           ModelRenderable.builder()
               .setSource(context, Uri.parse("models/AR_Link.sfb"))
-                  .build();
+                  .build();*/
       urCorner =
           ModelRenderable.builder()
               .setSource(context, Uri.parse("models/frame_upper_right.sfb"))
@@ -92,9 +92,22 @@ public class AugmentedImageNode extends AnchorNode implements Node.OnTapListener
     }
 
       if (infoCard == null) {
+
+          Vector3 localPosition = new Vector3();
+
+          // Upper right corner.
+            localPosition.set(0.05f , 0.0f, -0.05f );
+
           infoCard = new Node();
           infoCard.setParent(this);
+          infoCard.setLocalPosition(localPosition);
           infoCard.setEnabled(false);
+
+          Quaternion rotation1 = Quaternion.axisAngle(new Vector3(1.0f, 0.0f, 0.0f), -90); // rotate X axis 90 degrees
+          //Quaternion rotation2 = Quaternion.axisAngle(new Vector3(0.0f, 0.0f, 1.0f), 90); // rotate Y axis 90 degrees
+         infoCard.setWorldRotation(rotation1);
+          //infoCard.setWorldRotation(rotation2);
+
           //infoCard.setLookDirection(Vector3.forward(), Vector3.forward());
           //infoCard.setLocalPosition(new Vector3(0.0f, planetScale * INFO_CARD_Y_POS_COEFF, 0.0f));
 
@@ -115,8 +128,8 @@ public class AugmentedImageNode extends AnchorNode implements Node.OnTapListener
                           (renderable) -> {
                               infoCard.setRenderable(renderable);
                               TextView textView = (TextView) renderable.getView();
-                              textView.setText("Link");
-                              //textView.setTextSize(5);
+                              textView.setText("Map of Bay Campus");
+                              textView.setTextSize(5);
 
                           })
                   .exceptionally(
@@ -124,38 +137,6 @@ public class AugmentedImageNode extends AnchorNode implements Node.OnTapListener
                               throw new AssertionError("Could not load plane card view.", throwable);
                           });
     }
-        if (roomCard == null) {
-            roomCard = new Node();
-            roomCard.setParent(this);
-            roomCard.setEnabled(false);
-
-            roomCard.setOnTouchListener((hitTestResult, motionEvent) -> {
-
-             /* Toast.makeText(context, "Link card tapped",
-                      Toast.LENGTH_SHORT).show();
-
-             Intent i = new Intent(Intent.ACTION_VIEW);
-              i.setData(Uri.parse(COFO_URL));
-              context.startActivity(i);*/
-                return true;
-            });
-            ViewRenderable.builder()
-                    .setView(context, R.layout.room_card_view)
-                    .build()
-                    .thenAccept(
-                            (renderable) -> {
-                                infoCard.setRenderable(renderable);
-                                TextView textView = (TextView) renderable.getView();
-                                //textView.setText("Link");
-                                //textView.setTextSize(5);
-
-                            })
-                    .exceptionally(
-                            (throwable) -> {
-                                throw new AssertionError("Could not load plane card view.", throwable);
-                            });
-        }
-
   }
 
   /**
@@ -169,7 +150,7 @@ public class AugmentedImageNode extends AnchorNode implements Node.OnTapListener
     this.image = image;
 
     // If any of the models are not loaded, then recurse when all are loaded.
-    if (!ulCorner.isDone() || !urCorner.isDone() || !llCorner.isDone() || !lrCorner.isDone()) {
+/*    if (!ulCorner.isDone() || !urCorner.isDone() || !llCorner.isDone() || !lrCorner.isDone()) {
       CompletableFuture.allOf(ulCorner, urCorner, llCorner, lrCorner)
           .thenAccept((Void aVoid) -> setImage(image))
           .exceptionally(
@@ -177,7 +158,7 @@ public class AugmentedImageNode extends AnchorNode implements Node.OnTapListener
                 Log.e(TAG, "Exception loading", throwable);
                 return null;
               });
-    }
+    } */
 
     // Set the anchor based on the center of the image.
     setAnchor(image.createAnchor(image.getCenterPose()));
@@ -187,18 +168,18 @@ public class AugmentedImageNode extends AnchorNode implements Node.OnTapListener
     Node cornerNode;
 
     // Upper left corner.
-    localPosition.set(-0.5f * image.getExtentX(), 0.0f, -0.5f * image.getExtentZ());
+   /* localPosition.set(-0.5f * image.getExtentX(), 0.0f, -0.5f * image.getExtentZ());
     cornerNode = new Node();
     cornerNode.setParent(this);
     cornerNode.setLocalPosition(localPosition);
-    cornerNode.setRenderable(ulCorner.getNow(null));
+//    cornerNode.setRenderable(ulCorner.getNow(null)); */
 
     // Upper right corner.
-    localPosition.set(0.5f * image.getExtentX(), 0.0f, -0.5f * image.getExtentZ());
+   /* localPosition.set(0.5f * image.getExtentX(), 0.0f, -0.5f * image.getExtentZ());
     cornerNode = new Node();
     cornerNode.setParent(this);
     cornerNode.setLocalPosition(localPosition);
-    cornerNode.setRenderable(urCorner.getNow(null));
+    cornerNode.setRenderable(urCorner.getNow(null));*/
 
     /*// Lower right corner.
     localPosition.set(0.5f * image.getExtentX(), 0.0f, 0.5f * image.getExtentZ());

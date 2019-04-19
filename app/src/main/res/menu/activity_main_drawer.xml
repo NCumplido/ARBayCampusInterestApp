@@ -14,24 +14,28 @@
             android:icon="@android:drawable/ic_dialog_map"
             android:title="@string/nav_2d_map" />
         <item
-            android:id="@+id/nav_ar_view"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/ar_scan" />
-        <item
             android:id="@+id/nav_ar_directions"
             android:icon="@android:drawable/arrow_up_float"
-            android:title="@string/play"
+            android:title="@string/ar_directions"
             tools:icon="@android:drawable/arrow_up_float" />
         <item
-            android:id="@+id/nav_settings"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="@string/settings" />
+            android:id="@+id/nav_scan_sign"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/scan_sign" />
+        <item
+            android:id="@+id/nav_floor_plans"
+            android:icon="@android:drawable/ic_menu_info_details"
+            android:title="@string/floor_plans" />
     </group>
 
     <item
         android:id="@+id/menu_more"
         android:title="@string/more">
         <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="@string/settings" />
             <item
                 android:id="@+id/nav_about"
                 android:icon="@android:drawable/ic_menu_info_details"

@@ -36,15 +36,19 @@
     <string name="room5">Room5</string>
     <string name="room4">Room4</string>
     <string name="room1">Room1</string>
-    <string name="i_like_to_view">I\'d like to...</string>
+    <string name="i_like_to_view">I\'d like to…</string>
     <string name="explore_text_view">Explore!</string>
     <string name="explore_img_view">TODO</string>
     <string name="explore_button">Explore</string>
     <string name="play_button">Play</string>
-    <string name="find_view">Find...</string>
-    <string name="string_find_view">Find...</string>
+    <string name="find_view">Find…</string>
+    <string name="string_find_view">Find…</string>
     <string name="ar_scan">AR Scan</string>
     <string name="scan_button">Scan</string>
     <string name="ar_mode">AR Mode</string>
     <string name="play">Play</string>
+    <string name="scan_sign">Scan Sign</string>
+    <string name="floor_plans">Floor Plans</string>
+    <string name="floor_0">Floor 0</string>
+    <string name="cofo_floor_plans">CoFo floor plans:</string>
 </resources>

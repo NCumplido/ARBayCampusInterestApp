@@ -9,15 +9,10 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Gravity;
-import android.view.MotionEvent;
 import android.widget.Toast;
 
-import com.google.ar.core.Anchor;
-import com.google.ar.core.HitResult;
-import com.google.ar.sceneform.AnchorNode;
 import com.google.ar.sceneform.rendering.ModelRenderable;
 import com.google.ar.sceneform.ux.ArFragment;
-import com.google.ar.sceneform.ux.TransformableNode;
 
 public class ArDirectionsActivity extends AppCompatActivity {
 
@@ -40,7 +35,7 @@ public class ArDirectionsActivity extends AppCompatActivity {
 
         // When you build a Renderable, Sceneform loads its resources in the background while returning
         // a CompletableFuture. Call thenAccept(), handle(), or check isDone() before calling get().
-        /*ModelRenderable.builder()
+        ModelRenderable.builder()
                 .setSource(this, Uri.parse("models/indoor_plant_02.sfb"))
                 .build()
                 .thenAccept(renderable -> lampPotRenderable = renderable)
@@ -51,40 +46,7 @@ public class ArDirectionsActivity extends AppCompatActivity {
                             toast.setGravity(Gravity.CENTER, 0, 0);
                             toast.show();
                             return null;
-                        });*/
-        ModelRenderable.builder()
-                .setSource(this, Uri.parse("models/coffee_cup.sfb"))
-                .build()
-                .thenAccept(renderable -> coffee_cupRenderable = renderable)
-                .exceptionally(
-                        throwable -> {
-                            Toast toast =
-                                    Toast.makeText(this, "Unable to load coffee_cup renderable", Toast.LENGTH_LONG);
-                            toast.setGravity(Gravity.CENTER, 0, 0);
-                            toast.show();
-                            return null;
                         });
-
-        //Coffee cup tap
-        arFragment.setOnTapArPlaneListener(
-                (HitResult hitResult, com.google.ar.core.Plane plane, MotionEvent motionEvent) -> {
-                    if (lampPotRenderable == null) {
-                        return;
-                    }
-                    if (coffee_cupRenderable == null) {
-                        return;
-                    }
-                    // Create the Anchor.
-                    Anchor anchor = hitResult.createAnchor();
-                    AnchorNode anchorNode = new AnchorNode(anchor);
-                    anchorNode.setParent(arFragment.getArSceneView().getScene());
-
-                    // Create the transformable andy and add it to the anchor.
-                    TransformableNode andy = new TransformableNode(arFragment.getTransformationSystem());
-                    andy.setParent(anchorNode);
-                    andy.setRenderable(coffee_cupRenderable);
-                    andy.select();
-                });
     }
 
     /**

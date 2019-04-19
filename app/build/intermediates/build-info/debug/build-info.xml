@@ -5,34 +5,39 @@
     build-mode="COLD"
     density="xxhdpi"
     format="10"
+    ir-eligibility="R_CLASS_CHANGE"
     plugin-version="3.3.2"
-    timestamp="1555232505542"
+    timestamp="1555677378744"
     token="-4930161665303866532"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="6676" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="882" />
     <task
         name="verifier"
-        duration="0" />
+        duration="208" />
+
+    <artifact
+        location="C:\Users\Student\Documents\Uni\Year3\3rd year Project\ARBayCampusInteresApp\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Student\Documents\Uni\Year3\3rd year Project\ARBayCampusInteresApp\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+        type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1555230654784"
+        timestamp="1555672603017"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\Student\Documents\Uni\Year3\3rd year Project\ARBayCampusInteresApp\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
-        <artifact
-            location="C:\Users\Student\Documents\Uni\Year3\3rd year Project\ARBayCampusInteresApp\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
-            type="SPLIT_MAIN" />
         <artifact
             location="C:\Users\Student\Documents\Uni\Year3\3rd year Project\ARBayCampusInteresApp\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
@@ -66,19 +71,21 @@
         <artifact
             location="C:\Users\Student\Documents\Uni\Year3\3rd year Project\ARBayCampusInteresApp\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
+        <artifact
+            location="C:\Users\Student\Documents\Uni\Year3\3rd year Project\ARBayCampusInteresApp\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="CLASS_ADDED"
-        timestamp="1555232357660"
+        ir-eligibility="R_CLASS_CHANGE"
+        timestamp="1555677378744"
         verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\Student\Documents\Uni\Year3\3rd year Project\ARBayCampusInteresApp\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+            type="SPLIT" />
         <artifact
             location="C:\Users\Student\Documents\Uni\Year3\3rd year Project\ARBayCampusInteresApp\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
     </build>
-    <build
-        build-mode="COLD"
-        timestamp="1555232505542"
-        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>

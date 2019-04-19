@@ -65,3 +65,8 @@ sceneform.asset('sampledata/swanseaOBJ/swansea.obj',
         'default',
         'sampledata/swanseaOBJ/swansea.sfa',
         'src/main/assets/swansea')
+
+sceneform.asset('sampledata/Tree1/Tree1.obj',
+        'default',
+        'sampledata/Tree1/Tree1.sfa',
+        'src/main/assets/Tree1')
