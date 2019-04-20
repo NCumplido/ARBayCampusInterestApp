@@ -162,6 +162,28 @@ public class AugmentedImageFragment extends ArFragment {
         } catch (IOException e) {
             Log.e(TAG, "IO exception loading augmented image bitmap.", e);
         }
+        try (InputStream is = assetManager.open(SIGN_COFO_IMAGE_NAME)) {
+            return BitmapFactory.decodeStream(is);
+        } catch (IOException e) {
+            Log.e(TAG, "IO exception loading augmented image bitmap.", e);
+        }
+        try (InputStream is = assetManager.open(SKETCHPAD_IMAGE_NAME)) {
+            return BitmapFactory.decodeStream(is);
+        } catch (IOException e) {
+            Log.e(TAG, "IO exception loading augmented image bitmap.", e);
+        }
+
+        try (InputStream is = assetManager.open(Y_COLEG_IMAGE_NAME)) {
+            return BitmapFactory.decodeStream(is);
+        } catch (IOException e) {
+            Log.e(TAG, "IO exception loading augmented image bitmap.", e);
+        }
+
+        try (InputStream is = assetManager.open(Y_COLEG_SIGN_IMAGE_NAME)) {
+            return BitmapFactory.decodeStream(is);
+        } catch (IOException e) {
+            Log.e(TAG, "IO exception loading augmented image bitmap.", e);
+        }
         return null;
     }
 }
