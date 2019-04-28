@@ -156,6 +156,10 @@
         "source": "C:\\Users\\Student\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\3513f6c214b030757240015b7c11484a\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
     {
+        "merged": "C:\\Users\\Student\\Documents\\Uni\\Year3\\3rd year Project\\ARBayCampusInteresApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_study_space_card.xml.flat",
+        "source": "C:\\Users\\Student\\Documents\\Uni\\Year3\\3rd year Project\\ARBayCampusInteresApp\\app\\src\\main\\res\\layout\\study_space_card.xml"
+    },
+    {
         "merged": "C:\\Users\\Student\\Documents\\Uni\\Year3\\3rd year Project\\ARBayCampusInteresApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Student\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\3513f6c214b030757240015b7c11484a\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
     },
@@ -572,6 +576,10 @@
         "source": "C:\\Users\\Student\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-16.0.1.aar\\445af7f46c56abf81980e9d4429378d8\\res\\drawable\\common_google_signin_btn_icon_light.xml"
     },
     {
+        "merged": "C:\\Users\\Student\\Documents\\Uni\\Year3\\3rd year Project\\ARBayCampusInteresApp\\app\\build\\intermediates\\res\\merged\\debug\\font_raleway_medium.ttf.flat",
+        "source": "C:\\Users\\Student\\Documents\\Uni\\Year3\\3rd year Project\\ARBayCampusInteresApp\\app\\src\\main\\res\\font\\raleway_medium.ttf"
+    },
+    {
         "merged": "C:\\Users\\Student\\Documents\\Uni\\Year3\\3rd year Project\\ARBayCampusInteresApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\Student\\Documents\\Uni\\Year3\\3rd year Project\\ARBayCampusInteresApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
@@ -782,6 +790,10 @@
     {
         "merged": "C:\\Users\\Student\\Documents\\Uni\\Year3\\3rd year Project\\ARBayCampusInteresApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Student\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\3513f6c214b030757240015b7c11484a\\res\\drawable-hdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Student\\Documents\\Uni\\Year3\\3rd year Project\\ARBayCampusInteresApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_study_space_activity_ar.xml.flat",
+        "source": "C:\\Users\\Student\\Documents\\Uni\\Year3\\3rd year Project\\ARBayCampusInteresApp\\app\\src\\main\\res\\layout\\study_space_activity_ar.xml"
     },
     {
         "merged": "C:\\Users\\Student\\Documents\\Uni\\Year3\\3rd year Project\\ARBayCampusInteresApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-mdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -1184,6 +1196,10 @@
         "source": "C:\\Users\\Student\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\fdec0d732542a7d16ef1afa804732d8d\\res\\drawable-xxhdpi-v4\\design_ic_visibility.png"
     },
     {
+        "merged": "C:\\Users\\Student\\Documents\\Uni\\Year3\\3rd year Project\\ARBayCampusInteresApp\\app\\build\\intermediates\\res\\merged\\debug\\font_raleway.ttf.flat",
+        "source": "C:\\Users\\Student\\Documents\\Uni\\Year3\\3rd year Project\\ARBayCampusInteresApp\\app\\src\\main\\res\\font\\raleway.ttf"
+    },
+    {
         "merged": "C:\\Users\\Student\\Documents\\Uni\\Year3\\3rd year Project\\ARBayCampusInteresApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_tab_indicator_material.xml.flat",
         "source": "C:\\Users\\Student\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\3513f6c214b030757240015b7c11484a\\res\\drawable\\abc_tab_indicator_material.xml"
     },
@@ -1284,6 +1300,10 @@
         "source": "C:\\Users\\Student\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\3513f6c214b030757240015b7c11484a\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
+        "merged": "C:\\Users\\Student\\Documents\\Uni\\Year3\\3rd year Project\\ARBayCampusInteresApp\\app\\build\\intermediates\\res\\merged\\debug\\font_raleway_bold.ttf.flat",
+        "source": "C:\\Users\\Student\\Documents\\Uni\\Year3\\3rd year Project\\ARBayCampusInteresApp\\app\\src\\main\\res\\font\\raleway_bold.ttf"
+    },
+    {
         "merged": "C:\\Users\\Student\\Documents\\Uni\\Year3\\3rd year Project\\ARBayCampusInteresApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
         "source": "C:\\Users\\Student\\Documents\\Uni\\Year3\\3rd year Project\\ARBayCampusInteresApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
     },
@@ -1358,6 +1378,10 @@
     {
         "merged": "C:\\Users\\Student\\Documents\\Uni\\Year3\\3rd year Project\\ARBayCampusInteresApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\Student\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\3513f6c214b030757240015b7c11484a\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Student\\Documents\\Uni\\Year3\\3rd year Project\\ARBayCampusInteresApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_study_spaces.xml.flat",
+        "source": "C:\\Users\\Student\\Documents\\Uni\\Year3\\3rd year Project\\ARBayCampusInteresApp\\app\\src\\main\\res\\layout\\activity_study_spaces.xml"
     },
     {
         "merged": "C:\\Users\\Student\\Documents\\Uni\\Year3\\3rd year Project\\ARBayCampusInteresApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_btn_colored_material.xml.flat",
@@ -1628,6 +1652,10 @@
         "source": "C:\\Users\\Student\\Documents\\Uni\\Year3\\3rd year Project\\ARBayCampusInteresApp\\app\\src\\main\\res\\layout\\floor_0_plan.xml"
     },
     {
+        "merged": "C:\\Users\\Student\\Documents\\Uni\\Year3\\3rd year Project\\ARBayCampusInteresApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_widget_metadata.xml.flat",
+        "source": "C:\\Users\\Student\\Documents\\Uni\\Year3\\3rd year Project\\ARBayCampusInteresApp\\app\\src\\main\\res\\layout\\widget_metadata.xml"
+    },
+    {
         "merged": "C:\\Users\\Student\\Documents\\Uni\\Year3\\3rd year Project\\ARBayCampusInteresApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\Student\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\3513f6c214b030757240015b7c11484a\\res\\drawable-xxhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
     },
@@ -1818,6 +1846,10 @@
     {
         "merged": "C:\\Users\\Student\\Documents\\Uni\\Year3\\3rd year Project\\ARBayCampusInteresApp\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_tabs_icon_color_selector_colored.xml.flat",
         "source": "C:\\Users\\Student\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\fdec0d732542a7d16ef1afa804732d8d\\res\\color\\mtrl_tabs_icon_color_selector_colored.xml"
+    },
+    {
+        "merged": "C:\\Users\\Student\\Documents\\Uni\\Year3\\3rd year Project\\ARBayCampusInteresApp\\app\\build\\intermediates\\res\\merged\\debug\\font_raleway_semibold.ttf.flat",
+        "source": "C:\\Users\\Student\\Documents\\Uni\\Year3\\3rd year Project\\ARBayCampusInteresApp\\app\\src\\main\\res\\font\\raleway_semibold.ttf"
     },
     {
         "merged": "C:\\Users\\Student\\Documents\\Uni\\Year3\\3rd year Project\\ARBayCampusInteresApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_tile_bg.xml.flat",

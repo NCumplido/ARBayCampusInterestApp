@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
@@ -22,6 +23,10 @@
             android:id="@+id/nav_scan_sign"
             android:icon="@drawable/ic_menu_camera"
             android:title="@string/scan_sign" />
+        <item
+            android:id="@+id/nav_study_spaces"
+            android:icon="@android:drawable/ic_menu_info_details"
+            android:title="@string/study_spaces" />
         <item
             android:id="@+id/nav_floor_plans"
             android:icon="@android:drawable/ic_menu_info_details"

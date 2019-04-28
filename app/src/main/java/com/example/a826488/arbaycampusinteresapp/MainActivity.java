@@ -96,7 +96,13 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_ar_directions){
             Intent arDirections = new Intent(this, ArDirectionsActivity.class);
             startActivity(arDirections);
-        }
+        } else if (id == R.id.nav_study_spaces){
+            Intent studySpacesActivity = new Intent(this, StudySpacesActivity.class);
+            startActivity(studySpacesActivity);
+        }/* else if (id == R.id.nav_study_spaces){
+            Intent aRStudySpacesActivity = new Intent(this, ARStudySpacesActivity.class);
+            startActivity(aRStudySpacesActivity);
+        }*/
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

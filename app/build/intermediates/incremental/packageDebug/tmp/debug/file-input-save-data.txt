@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Apr 16 11:20:48 BST 2019
+#Fri Apr 26 18:52:24 BST 2019
 5.base=C\:\\Users\\Student\\Documents\\Uni\\Year3\\3rd year Project\\ARBayCampusInteresApp\\app\\build\\intermediates\\transforms\\mergeJniLibs\\debug\\0
 42.base=C\:\\Users\\Student\\Documents\\Uni\\Year3\\3rd year Project\\ARBayCampusInteresApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
 22.path=Tree1.sfb

@@ -635,8 +635,12 @@ color cardview_light_background
 color cardview_shadow_end_color
 color cardview_shadow_start_color
 color colorAccent
+color colorLightPrimary
 color colorPrimary
 color colorPrimaryDark
+color colorPrimaryText
+color colorSecondaryText
+color colorTextIcons
 color common_google_signin_btn_text_dark
 color common_google_signin_btn_text_dark_default
 color common_google_signin_btn_text_dark_disabled
@@ -1106,6 +1110,10 @@ drawable side_nav_bar
 drawable study_spaces
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font raleway
+font raleway_bold
+font raleway_medium
+font raleway_semibold
 id ALT
 id CTRL
 id CoFo_floors_view
@@ -1147,6 +1155,7 @@ id all
 id always
 id ar_core_view
 id ar_directions_fragment
+id ar_layout
 id async
 id auto
 id barrier
@@ -1154,6 +1163,7 @@ id beginning
 id blocking
 id bottom
 id btn_floor0
+id button5
 id buttonPanel
 id cancel_action
 id center
@@ -1238,6 +1248,11 @@ id masked
 id media_actions
 id menu_more
 id message
+id meta_location
+id meta_name
+id meta_res
+id meta_size
+id meta_time
 id middle
 id mini
 id mtrl_child_content_container
@@ -1251,6 +1266,7 @@ id nav_floor_plans
 id nav_how_to
 id nav_scan_sign
 id nav_settings
+id nav_study_spaces
 id nav_view
 id navigation_header_container
 id never
@@ -1330,6 +1346,8 @@ id standard
 id start
 id status_bar_latest_event_content
 id stretch
+id study_instruct_view
+id study_space_card
 id submenuarrow
 id submit_area
 id tabMode
@@ -1428,6 +1446,7 @@ layout activity_how_to
 layout activity_main
 layout activity_maps
 layout activity_settings
+layout activity_study_spaces
 layout app_bar_main
 layout cofo_floor0
 layout content_main
@@ -1471,7 +1490,10 @@ layout sceneform_ux_fragment_layout
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout study_space_activity_ar
+layout study_space_card
 layout support_simple_spinner_dropdown_item
+layout widget_metadata
 menu activity_main_drawer
 menu main
 mipmap ic_launcher
@@ -1603,6 +1625,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string play
 string play_button
+string point_the_camera_towards_the_floor_and_move_it_around_once_your_device_has_detected_the_floor_tap_your_screen_to_see_the_study_spaces
 string room1
 string room2
 string room3

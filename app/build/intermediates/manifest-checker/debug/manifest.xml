@@ -39,10 +39,13 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
+            android:name="com.example.a826488.arbaycampusinteresapp.StudySpacesActivity"
+            android:label="Study spaces"
+            android:parentActivityName="com.example.a826488.arbaycampusinteresapp.MainActivity" />
+        <activity
             android:name="com.example.a826488.arbaycampusinteresapp.FloorPlansActivity"
             android:label="Floor plans"
-            android:parentActivityName="com.example.a826488.arbaycampusinteresapp.MainActivity" >
-        </activity>
+            android:parentActivityName="com.example.a826488.arbaycampusinteresapp.MainActivity" />
         <activity
             android:name="com.example.a826488.arbaycampusinteresapp.MainActivity"
             android:label="AR Bay Campus Interest App"

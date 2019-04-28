@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StudySpacesActivity"
+    >
+
+    <TextView
+        android:id="@+id/study_instruct_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/point_the_camera_towards_the_floor_and_move_it_around_once_your_device_has_detected_the_floor_tap_your_screen_to_see_the_study_spaces"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="Study spaces" />
+
+</LinearLayout>

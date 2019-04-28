@@ -32,6 +32,10 @@ import com.google.ar.sceneform.ux.ArFragment;
 
 /**
  * This is an example activity that uses the Sceneform UX package to make common AR tasks easier.
+ *
+ * Snackbar snackbar = Snackbar.make(layout,
+ *                     "Please ensure you have a media manager installed.", 3000);
+ *             snackbar.show();
  */
 public class CoFoFloor0 extends AppCompatActivity {
     private static final String TAG = CoFoFloor0.class.getSimpleName();

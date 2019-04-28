@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Image Details"
+        android:fontFamily="@font/raleway_bold"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="36px" />
+
+    <TextView
+        android:id="@+id/meta_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name - N/A"
+        android:fontFamily="@font/raleway_medium"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="30px"/>
+
+    <TextView
+        android:id="@+id/meta_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date taken - N/A"
+        android:fontFamily="@font/raleway_medium"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="30px"/>
+
+    <TextView
+        android:id="@+id/meta_res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resolution - N/A"
+        android:fontFamily="@font/raleway_medium"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="30px"/>
+
+    <TextView
+        android:id="@+id/meta_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Size - N/A"
+        android:fontFamily="@font/raleway_medium"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="30px"/>
+
+    <TextView
+        android:id="@+id/meta_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location - N/A"
+        android:fontFamily="@font/raleway_medium"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="30px"/>
+</LinearLayout>
