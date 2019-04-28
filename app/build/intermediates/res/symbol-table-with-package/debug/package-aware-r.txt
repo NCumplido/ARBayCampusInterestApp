@@ -1230,6 +1230,7 @@ id ifRoom
 id image
 id imageView
 id image_view_fit_to_scan
+id img_view
 id info
 id invisible
 id italic
@@ -1248,11 +1249,6 @@ id masked
 id media_actions
 id menu_more
 id message
-id meta_location
-id meta_name
-id meta_res
-id meta_size
-id meta_time
 id middle
 id mini
 id mtrl_child_content_container
@@ -1447,6 +1443,7 @@ layout activity_main
 layout activity_maps
 layout activity_settings
 layout activity_study_spaces
+layout activity_study_spaces_ar
 layout app_bar_main
 layout cofo_floor0
 layout content_main
@@ -1493,7 +1490,7 @@ layout select_dialog_singlechoice_material
 layout study_space_activity_ar
 layout study_space_card
 layout support_simple_spinner_dropdown_item
-layout widget_metadata
+layout widget_image
 menu activity_main_drawer
 menu main
 mipmap ic_launcher

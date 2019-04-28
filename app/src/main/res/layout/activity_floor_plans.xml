@@ -12,6 +12,12 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/instructions_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions_view" />
+
+        <TextView
             android:id="@+id/CoFo_floors_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -25,6 +31,39 @@
             android:gravity="center"
             android:text="@string/floor_0"
             android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_floor_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/floor_1"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_floor2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/floor_2"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_floor3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/floor_3"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_floor4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/floor_4"
+            android:textSize="30sp" />
+
     </LinearLayout>
 
 </RelativeLayout>

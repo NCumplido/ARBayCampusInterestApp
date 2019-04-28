@@ -1,5 +1,6 @@
 package com.example.a826488.arbaycampusinteresapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -35,6 +36,9 @@ public class StudySpacesActivity extends AppCompatActivity {
             public void onClick(View arg0) {
                 m_button.setText(TAG);
                 //Do something here...
+                Intent studySpacesIntent = new Intent(getApplicationContext(), StudySpacesARActivity.class);
+                //studySpacesIntent.putExtra("Filepath", filePath);
+                startActivity(studySpacesIntent);
             }
 
         });

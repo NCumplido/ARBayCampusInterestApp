@@ -21,9 +21,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".StudySpacesActivity"
+        <activity android:name=".StudySpacesARActivity"></activity>
+        <activity
+            android:name=".StudySpacesActivity"
             android:label="Study spaces"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".FloorPlansActivity"
             android:label="Floor plans"

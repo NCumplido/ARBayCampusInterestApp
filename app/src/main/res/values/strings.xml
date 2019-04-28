@@ -52,4 +52,9 @@
     <string name="floor_0">Floor 0</string>
     <string name="cofo_floor_plans">CoFo floor plans:</string>
     <string name="point_the_camera_towards_the_floor_and_move_it_around_once_your_device_has_detected_the_floor_tap_your_screen_to_see_the_study_spaces">Point the camera towards the ground and move it around. Once your device has detected the ground, tap your screen to see the study spaces!</string>
+    <string name="instructions_view">To see floor plans, use your device to scan the ground. Once the ground has been detected tap your screen to see the plans for your selected floor!</string>
+    <string name="floor_1">FLOOR 1</string>
+    <string name="floor_4">FLOOR 4</string>
+    <string name="floor_3">FLOOR 3</string>
+    <string name="floor_2">FLOOR 2</string>
 </resources>
