@@ -38,6 +38,14 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.a826488.arbaycampusinteresapp.ExploreActivity"
+            android:label="@string/title_activity_explore"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.a826488.arbaycampusinteresapp.CofoPlansArActivity"
+            android:label="Explore"
+            android:parentActivityName="com.example.a826488.arbaycampusinteresapp.MainActivity" />
         <activity android:name="com.example.a826488.arbaycampusinteresapp.StudySpacesARActivity" />
         <activity
             android:name="com.example.a826488.arbaycampusinteresapp.StudySpacesActivity"
@@ -77,10 +85,12 @@
             android:name="com.example.a826488.arbaycampusinteresapp.SettingsActivity"
             android:label="Settings"
             android:parentActivityName="com.example.a826488.arbaycampusinteresapp.MainActivity" />
+        <!--
         <activity
-            android:name="com.example.a826488.arbaycampusinteresapp.CoFoFloor0"
+            android:name=".CoFoFloor0"
             android:label="Andy"
-            android:parentActivityName="com.example.a826488.arbaycampusinteresapp.MainActivity" />
+            android:parentActivityName=".MainActivity" />
+        -->
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").

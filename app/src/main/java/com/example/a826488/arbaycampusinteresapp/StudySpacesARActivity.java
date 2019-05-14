@@ -15,7 +15,7 @@ public class StudySpacesARActivity extends AppCompatActivity {
     private static final double MIN_OPENGL_VERSION = 3.1;
 
     private ArFragment arFragment;
-    ImageNode imageNode;
+    StudySpacesImageNode imageNode;
 
     private FrameLayout layout;
 
@@ -28,7 +28,7 @@ public class StudySpacesARActivity extends AppCompatActivity {
         layout = findViewById(R.id.ar_layout);
 
         // Create the ImageNode
-        imageNode = new ImageNode( StudySpacesARActivity.this);
+        imageNode = new StudySpacesImageNode( StudySpacesARActivity.this);
         imageNode.initialize();
 
         // Setup a tap listener

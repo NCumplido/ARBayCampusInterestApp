@@ -13,31 +13,50 @@ import com.google.ar.sceneform.rendering.ViewRenderable;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 
-//This ImageNode is for STUDY SPACES
-public class ImageNode extends Node implements Node.OnTapListener {
+public class CoFoFloorPlansImageNode extends Node implements Node.OnTapListener {
     private final int PIXEL_TO_METER_RATIO = 2000;
+    private int floorId;
 
+    //private Bitmap image;
     private Image image;
     public boolean isLoaded = false;
+    private String filepath;
 
     private Node imageNode;
     private ViewRenderable imageViewRenderable;
     private Context context;
 
-    public ImageNode( Context context) {
+    public CoFoFloorPlansImageNode(String filepath, Context context) {
+        this.filepath = filepath;
+
         this.context = context;
+        //this.image = BitmapFactory.decodeFile(filepath);
+
         setOnTapListener(this);
         this.setEnabled(false);
     }
 
     public void initialize() {
+
+        if (filepath=="floor0"){
+            initialiseCoFoFloor0();
+        } else if (filepath=="floor1"){
+        } else if (filepath=="floor2"){
+        } else if (filepath=="floor3"){
+        } else if (filepath=="floor4"){
+        }
+
+    }
+
+    public void initialiseCoFoFloor0(){
+
         // Setup the ImageView and MetaData renderables
         imageNode = new Node();
         imageNode.setParent(this);
         imageNode.setEnabled(true);
 
         CompletableFuture<ViewRenderable> imageStage =
-                ViewRenderable.builder().setView(context, R.layout.widget_image).build();
+                ViewRenderable.builder().setView(context, R.layout.cofo_floor_0_card).build();
 
         CompletableFuture.allOf(imageStage)
                 .handle((notUsed, throwable) -> {
@@ -53,7 +72,6 @@ public class ImageNode extends Node implements Node.OnTapListener {
                         imageViewRenderable = (ViewRenderable) imageNode.getRenderable();
                         //imageViewRenderable.setPixelsToMetersRatio(PIXEL_TO_METER_RATIO);
                         ImageView imageView = (ImageView) imageViewRenderable.getView();
-                        //imageView.setImageResource();
 
                         isLoaded = true;
 
@@ -64,6 +82,8 @@ public class ImageNode extends Node implements Node.OnTapListener {
 
                     return null;
                 });
+
+
     }
 
     @Override
@@ -75,5 +95,7 @@ public class ImageNode extends Node implements Node.OnTapListener {
 
     @Override
     public void onTap(HitTestResult hitTestResult, MotionEvent motionEvent) {
-    }
+
+        }
+
 }

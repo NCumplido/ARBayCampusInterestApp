@@ -57,4 +57,6 @@
     <string name="floor_4">FLOOR 4</string>
     <string name="floor_3">FLOOR 3</string>
     <string name="floor_2">FLOOR 2</string>
+    <string name="title_activity_explore">ExploreActivity</string>
+    <string name="content_coming_soon">Content coming soon!</string>
 </resources>

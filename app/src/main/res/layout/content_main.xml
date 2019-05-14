@@ -10,6 +10,14 @@
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/instruct_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tap the Hmaburger button in the top left corner to navigate through the app.
+Scan signs outside campus to learn more about the building and what it has to offer.
+Point your device's camera to the ground and scan the floor, once white dots appear tap the screen!" />
+
+    <TextView
         android:id="@+id/IwouldLikeTo_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

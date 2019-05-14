@@ -1048,6 +1048,11 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable cofo_floor_0
+drawable cofo_floor_1
+drawable cofo_floor_2
+drawable cofo_floor_3
+drawable cofo_floor_4
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -1074,7 +1079,6 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable fit_to_scan
-drawable floor_0_cofo
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_launcher_background
@@ -1163,6 +1167,10 @@ id beginning
 id blocking
 id bottom
 id btn_floor0
+id btn_floor2
+id btn_floor3
+id btn_floor4
+id btn_floor_1
 id button5
 id buttonPanel
 id cancel_action
@@ -1179,7 +1187,9 @@ id checkbox
 id chronometer
 id clip_horizontal
 id clip_vertical
+id cofo_floor_0_card
 id collapseActionView
+id coming_soon_text
 id container
 id content
 id contentPanel
@@ -1208,6 +1218,8 @@ id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id explore_button
+id fab
+id facilities_text
 id fill
 id fill_horizontal
 id fill_vertical
@@ -1232,6 +1244,8 @@ id imageView
 id image_view_fit_to_scan
 id img_view
 id info
+id instruct_view
+id instructions_text_view
 id invisible
 id italic
 id item_touch_helper_previous_elevation
@@ -1259,7 +1273,6 @@ id nav_about
 id nav_ar_directions
 id nav_contact
 id nav_floor_plans
-id nav_how_to
 id nav_scan_sign
 id nav_settings
 id nav_study_spaces
@@ -1436,7 +1449,9 @@ layout abc_tooltip
 layout activity_about
 layout activity_ar
 layout activity_ar_directions
+layout activity_cofo_plans_ar
 layout activity_contact
+layout activity_explore
 layout activity_floor_plans
 layout activity_how_to
 layout activity_main
@@ -1446,6 +1461,8 @@ layout activity_study_spaces
 layout activity_study_spaces_ar
 layout app_bar_main
 layout cofo_floor0
+layout cofo_floor_0_card
+layout content_explore
 layout content_main
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1461,7 +1478,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
-layout floor_0_plan
+layout facilities_card
 layout link_card_view
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
@@ -1586,6 +1603,7 @@ string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
 string contact
+string content_coming_soon
 string email_view
 string explore_button
 string explore_img_view
@@ -1595,6 +1613,10 @@ string fab_transformation_sheet_behavior
 string find_view
 string fit_image_to_scan
 string floor_0
+string floor_1
+string floor_2
+string floor_3
+string floor_4
 string floor_plans
 string food_outlets
 string google_maps_key
@@ -1602,6 +1624,7 @@ string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string howto
 string i_like_to_view
+string instructions_view
 string leaflet_test_text_view
 string lib_name
 string main_buildings
@@ -1639,6 +1662,7 @@ string status_bar_notification_info_overflow
 string string_find_view
 string study_spaces
 string title_activity_ar_view
+string title_activity_explore
 string title_activity_maps
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

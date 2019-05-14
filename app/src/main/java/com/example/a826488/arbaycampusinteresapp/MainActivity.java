@@ -2,6 +2,7 @@ package com.example.a826488.arbaycampusinteresapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -11,10 +12,18 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.CheckBox;
 
 //TODO: Privacy statements clickable
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    Button m_btnExplore, m_btnScan, m_btnPlay;
+    FloatingActionButton m_fabSearch;
+    CheckBox m_mainBuildings, m_mainLectureTheatres, m_studySpaces,
+             m_foodOutlets, m_shops;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +41,17 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-
+        m_btnExplore = findViewById(R.id.explore_button);
+        m_btnExplore.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Move to AR Activity
+                Intent floor0ArIntent = new Intent(getApplicationContext(), CofoPlansArActivity.class);
+                floor0ArIntent.putExtra("floorIdentifier", "floor0");
+                startActivity(floor0ArIntent);
+            }
+        });
+        m_btnScan = findViewById(R.id.scan_button);
+        m_btnPlay = findViewById(R.id.play_button);
     }
 
     @Override
@@ -73,10 +92,10 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_how_to) {
+       /* if (id == R.id.nav_how_to) {
             Intent howTo = new Intent(this, HowTo.class);
             startActivity(howTo);
-        } else if (id == R.id.nav_2d_map) {
+        } else */ if (id == R.id.nav_2d_map) {
             Log.d("Map", "Button tapped");
             Intent map = new Intent(this, MapsActivity.class);
             Log.d("Map", "Intent created");

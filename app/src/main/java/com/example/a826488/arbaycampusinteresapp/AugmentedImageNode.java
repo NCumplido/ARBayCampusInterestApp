@@ -48,8 +48,7 @@ public class AugmentedImageNode extends AnchorNode implements Node.OnTapListener
 
     // The augmented image represented by this node.
   private AugmentedImage image;
-  private Node infoCard;
-  private Node roomCard;
+  private Node urlNode, roomNode, facilitiesNode;
 
   // Models of the 4 corners.  We use completable futures here to simplify
   // the error handling and asynchronous loading.  The loading is started with the
@@ -80,38 +79,29 @@ public class AugmentedImageNode extends AnchorNode implements Node.OnTapListener
           ModelRenderable.builder()
               .setSource(context, Uri.parse("models/frame_upper_right.sfb"))
               .build();
-      llCorner =
-          ModelRenderable.builder()
-              .setSource(context, Uri.parse("models/frame_lower_left.sfb"))
-              .build();
-      lrCorner =
-          ModelRenderable.builder()
-              .setSource(context, Uri.parse("models/frame_lower_right.sfb"))
-              .build();
-
     }
 
-      if (infoCard == null) {
+      if ( urlNode == null) {
 
           Vector3 localPosition = new Vector3();
 
           // Upper right corner.
             localPosition.set(0.05f , 0.0f, -0.05f );
 
-          infoCard = new Node();
-          infoCard.setParent(this);
-          infoCard.setLocalPosition(localPosition);
-          infoCard.setEnabled(false);
+          urlNode = new Node();
+          urlNode.setParent(this);
+          urlNode.setLocalPosition(localPosition);
+          urlNode.setEnabled(false);
 
           Quaternion rotation1 = Quaternion.axisAngle(new Vector3(1.0f, 0.0f, 0.0f), -90); // rotate X axis 90 degrees
           //Quaternion rotation2 = Quaternion.axisAngle(new Vector3(0.0f, 0.0f, 1.0f), 90); // rotate Y axis 90 degrees
-         infoCard.setWorldRotation(rotation1);
-          //infoCard.setWorldRotation(rotation2);
+          urlNode.setWorldRotation(rotation1);
+          //.setWorldRotation(rotation2);
 
-          //infoCard.setLookDirection(Vector3.forward(), Vector3.forward());
-          //infoCard.setLocalPosition(new Vector3(0.0f, planetScale * INFO_CARD_Y_POS_COEFF, 0.0f));
+          //.setLookDirection(Vector3.forward(), Vector3.forward());
+          //.setLocalPosition(new Vector3(0.0f, planetScale * INFO_CARD_Y_POS_COEFF, 0.0f));
 
-          infoCard.setOnTouchListener((hitTestResult, motionEvent) -> {
+          urlNode.setOnTouchListener((hitTestResult, motionEvent) -> {
 
              /* Toast.makeText(context, "Link card tapped",
                       Toast.LENGTH_SHORT).show();
@@ -126,9 +116,9 @@ public class AugmentedImageNode extends AnchorNode implements Node.OnTapListener
                   .build()
                   .thenAccept(
                           (renderable) -> {
-                              infoCard.setRenderable(renderable);
+                              urlNode.setRenderable(renderable);
                               TextView textView = (TextView) renderable.getView();
-                              textView.setText("Map of Bay Campus");
+                              textView.setText("Nic's project fair stand");
                               textView.setTextSize(5);
 
                           })
@@ -136,7 +126,52 @@ public class AugmentedImageNode extends AnchorNode implements Node.OnTapListener
                           (throwable) -> {
                               throw new AssertionError("Could not load plane card view.", throwable);
                           });
-    }
+    } if(facilitiesNode == null){
+          //TODO:
+            Vector3 localPosition = new Vector3();
+
+            // Some corner.
+            localPosition.set(-0.05f , 0.0f, 0.05f );
+
+            facilitiesNode = new Node();
+            facilitiesNode.setParent(this);
+            facilitiesNode.setLocalPosition(localPosition);
+            facilitiesNode.setEnabled(false);
+
+            Quaternion rotation1 = Quaternion.axisAngle(new Vector3(1.0f, 0.0f, 0.0f), -90); // rotate X axis 90 degrees
+            //Quaternion rotation2 = Quaternion.axisAngle(new Vector3(0.0f, 0.0f, 1.0f), 90); // rotate Y axis 90 degrees
+            facilitiesNode.setWorldRotation(rotation1);
+            //.setWorldRotation(rotation2);
+
+            //.setLookDirection(Vector3.forward(), Vector3.forward());
+            //.setLocalPosition(new Vector3(0.0f, planetScale * INFO_CARD_Y_POS_COEFF, 0.0f));
+
+            facilitiesNode.setOnTouchListener((hitTestResult, motionEvent) -> {
+
+             /* Toast.makeText(context, "Link card tapped",
+                      Toast.LENGTH_SHORT).show();
+
+             Intent i = new Intent(Intent.ACTION_VIEW);
+              i.setData(Uri.parse(COFO_URL));
+              context.startActivity(i);*/
+                return true;
+            });
+            ViewRenderable.builder()
+                    .setView(context, R.layout.facilities_card)
+                    .build()
+                    .thenAccept(
+                            (renderable) -> {
+                                facilitiesNode.setRenderable(renderable);
+                                TextView textView = (TextView) renderable.getView();
+                                textView.setText("You are in the Great Hall");
+                                textView.setTextSize(5);
+
+                            })
+                    .exceptionally(
+                            (throwable) -> {
+                                throw new AssertionError("Could not load plane card view.", throwable);
+                            });
+        }
   }
 
   /**

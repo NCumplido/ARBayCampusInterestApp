@@ -21,7 +21,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".StudySpacesARActivity"></activity>
+        <activity
+            android:name=".ExploreActivity"
+            android:label="@string/title_activity_explore"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".CofoPlansArActivity"
+            android:label="Explore"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity android:name=".StudySpacesARActivity" />
         <activity
             android:name=".StudySpacesActivity"
             android:label="Study spaces"
@@ -60,10 +68,12 @@
             android:name=".SettingsActivity"
             android:label="Settings"
             android:parentActivityName=".MainActivity" />
+        <!--
         <activity
             android:name=".CoFoFloor0"
             android:label="Andy"
             android:parentActivityName=".MainActivity" />
+        -->
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
