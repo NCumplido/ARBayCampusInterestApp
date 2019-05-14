@@ -51,11 +51,12 @@ public class AugmentedImageFragment extends ArFragment {
     private static final String SKETCHPAD_IMAGE_NAME = "Sketchpad.jpg";
     private static final String Y_COLEG_IMAGE_NAME = "y_coleg.jpg";
     private static final String Y_COLEG_SIGN_IMAGE_NAME = "Y_Coleg_Sign.jpg";
+    private static final String PROJ_FAIR_POSTER_NAME = "proj_fair_poster";
 
     //Project Fair:
-    private static final String PROJ_FAIR_TITLE_NAME = "proj_fair_title_page.PNG";
-    private static final String PROJ_GREAT_HALL_IMAGE = "proj_great_hall_image.PNG";
-    private static final String PROJ_GREAT_HALL_PAGE = "proj_great_hall_page.PNG";
+    private static final String PROJ_FAIR_TITLE_NAME = "stall_paper.PNG";
+    private static final String PROJ_GREAT_HALL_IMAGE = "great_hall_paper.PNG";
+    private static final String PROJ_GREAT_HALL_PAGE = "compsci_fair_paper.PNG";
 
     // This is a pre-created database containing the sample image.
     private static final String SAMPLE_IMAGE_DATABASE = "db.imgdb";
@@ -145,6 +146,8 @@ public class AugmentedImageFragment extends ArFragment {
             augmentedImageDatabase.addImage(PROJ_FAIR_TITLE_NAME, augmentedImageBitmap);
             augmentedImageDatabase.addImage(PROJ_GREAT_HALL_IMAGE, augmentedImageBitmap);
             augmentedImageDatabase.addImage(PROJ_GREAT_HALL_PAGE, augmentedImageBitmap);
+            augmentedImageDatabase.addImage(PROJ_FAIR_POSTER_NAME, augmentedImageBitmap);
+
 
             // If the physical size of the image is known, you can instead use:
             //     augmentedImageDatabase.addImage("image_name", augmentedImageBitmap, widthInMeters);
@@ -166,6 +169,12 @@ public class AugmentedImageFragment extends ArFragment {
     }
 
     private Bitmap loadAugmentedImageBitmap(AssetManager assetManager) {
+
+        try (InputStream is = assetManager.open(PROJ_FAIR_POSTER_NAME)) {
+            return BitmapFactory.decodeStream(is);
+        } catch (IOException e) {
+            Log.e(TAG, "IO exception loading augmented image bitmap.", e);
+        }
         try (InputStream is = assetManager.open(LEAFLET_IMAGE_NAME)) {
             return BitmapFactory.decodeStream(is);
         } catch (IOException e) {
