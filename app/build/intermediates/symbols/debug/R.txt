@@ -1527,6 +1527,7 @@ int raw sceneform_plane_shadow_material 0x7f0f000b
 int raw sceneform_transparent_colored_material 0x7f0f000c
 int raw sceneform_transparent_textured_material 0x7f0f000d
 int raw sceneform_view_renderable 0x7f0f000e
+int raw swansea 0x7f0f000f
 int string __arcore_cancel 0x7f100000
 int string __arcore_continue 0x7f100001
 int string __arcore_install_app 0x7f100002

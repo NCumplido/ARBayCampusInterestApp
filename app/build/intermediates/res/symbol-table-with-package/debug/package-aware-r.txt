@@ -1528,6 +1528,7 @@ raw sceneform_plane_shadow_material
 raw sceneform_transparent_colored_material
 raw sceneform_transparent_textured_material
 raw sceneform_view_renderable
+raw swansea
 string __arcore_cancel
 string __arcore_continue
 string __arcore_install_app

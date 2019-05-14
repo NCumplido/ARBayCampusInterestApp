@@ -6,22 +6,22 @@
     density="xxhdpi"
     format="10"
     plugin-version="3.3.2"
-    timestamp="1557844016127"
+    timestamp="1557859160139"
     token="-4930161665303866532"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="5843" />
+        duration="8220" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="531" />
+        duration="216" />
     <task
         name="verifier"
-        duration="85" />
+        duration="133" />
 
     <artifact
         location="C:\Users\Student\Documents\Uni\Year3\3rd year Project\ARBayCampusInteresApp\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
@@ -65,7 +65,7 @@
 
     <build
         build-mode="FULL"
-        timestamp="1557844016127"
+        timestamp="1557859160139"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\Student\Documents\Uni\Year3\3rd year Project\ARBayCampusInteresApp\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
