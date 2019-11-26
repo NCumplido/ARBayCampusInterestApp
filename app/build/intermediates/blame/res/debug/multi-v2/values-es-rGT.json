@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Student\\Documents\\Uni\\Year3\\3rd year Project\\ARBayCampusInteresApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-es-rGT\\values-es-rGT.xml",
+            "outputFile": "C:\\Users\\Nich\\AndroidStudioProjects\\ARBayCampusInteresApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-es-rGT\\values-es-rGT.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Student\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.8.0.aar\\972275551a35d471d37c030e78bbddaa\\res\\values-es-rGT\\values.xml",
+                    "source": "C:\\Users\\Nich\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.8.0.aar\\30eb355b75ff757801044d47c16d8d73\\res\\values-es-rGT\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8",
                         "startColumns": "0,0,0,0,0",

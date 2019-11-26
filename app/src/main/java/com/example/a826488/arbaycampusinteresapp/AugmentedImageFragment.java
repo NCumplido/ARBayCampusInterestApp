@@ -52,6 +52,7 @@ public class AugmentedImageFragment extends ArFragment {
     private static final String Y_COLEG_IMAGE_NAME = "y_coleg.jpg";
     private static final String Y_COLEG_SIGN_IMAGE_NAME = "Y_Coleg_Sign.jpg";
     private static final String PROJ_FAIR_POSTER_NAME = "proj_fair_poster";
+    private static final String STUDY_SPACES_IMAGE_NAME = "study_spaces.PNG";
 
     //Project Fair:
     private static final String PROJ_FAIR_TITLE_NAME = "stall_paper.PNG";
@@ -142,6 +143,7 @@ public class AugmentedImageFragment extends ArFragment {
             augmentedImageDatabase.addImage(SKETCHPAD_IMAGE_NAME, augmentedImageBitmap);
             augmentedImageDatabase.addImage(Y_COLEG_IMAGE_NAME, augmentedImageBitmap);
             augmentedImageDatabase.addImage(Y_COLEG_SIGN_IMAGE_NAME, augmentedImageBitmap);
+            augmentedImageDatabase.addImage(STUDY_SPACES_IMAGE_NAME, augmentedImageBitmap);
 
             augmentedImageDatabase.addImage(PROJ_FAIR_TITLE_NAME, augmentedImageBitmap);
             augmentedImageDatabase.addImage(PROJ_GREAT_HALL_IMAGE, augmentedImageBitmap);
@@ -216,6 +218,12 @@ public class AugmentedImageFragment extends ArFragment {
         }
 
         try (InputStream is = assetManager.open(PROJ_GREAT_HALL_PAGE)) {
+            return BitmapFactory.decodeStream(is);
+        } catch (IOException e) {
+            Log.e(TAG, "IO exception loading augmented image bitmap.", e);
+        }
+
+        try (InputStream is = assetManager.open(STUDY_SPACES_IMAGE_NAME)) {
             return BitmapFactory.decodeStream(is);
         } catch (IOException e) {
             Log.e(TAG, "IO exception loading augmented image bitmap.", e);
